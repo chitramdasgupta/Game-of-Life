@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Wshadow -Wcast-qual -Wparentheses -Wpedantic -O3
+CFLAGS = -Wall -Wextra -Wshadow -Wcast-qual -Wparentheses -Wpedantic -O3 -std=c99
 LDFLAGS = `sdl2-config --libs`
 
 main: main.o logic.o init.o render.o
