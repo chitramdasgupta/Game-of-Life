@@ -24,5 +24,5 @@ render.o: render.c
 
 clean:
 	$(RM) *.o
-	$(RM) main
+	# $(RM) main
 	# $(RM) main.exe
