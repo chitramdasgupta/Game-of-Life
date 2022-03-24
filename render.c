@@ -1,18 +1,6 @@
 #include <SDL2/SDL.h>
-#include <errno.h>
-#include <time.h>
 #include "constants.h"
 #include "render.h"
-
-void delay(int milliseconds) {
-    long pause;
-    clock_t now,then;
-
-    pause = milliseconds*(CLOCKS_PER_SEC/1000);
-    now = then = clock();
-    while( (now-then) < pause )
-        now = clock();
-}
 
 void render_grid(SDL_Renderer * renderer) {
         SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);

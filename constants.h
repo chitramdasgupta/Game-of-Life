@@ -1,5 +1,5 @@
-#define SCREEN_WIDTH 800
-#define SCREEN_HEIGHT 800
+#define SCREEN_WIDTH 680
+#define SCREEN_HEIGHT 680
 #define N 20
 
 #define CELL_WIDTH SCREEN_WIDTH/N

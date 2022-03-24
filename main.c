@@ -35,7 +35,8 @@ int main(int argc, char *argv[]) {
         render_cells(renderer, world);
         SDL_RenderPresent(renderer);
 
-        delay(500);
+        // delay(500);
+        SDL_Delay(500);
     }
 
     exit_SDL(window);

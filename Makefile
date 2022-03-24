@@ -4,8 +4,7 @@ INCL = -Isrc/Include -Lsrc/lib
 LINK = -lmingw32 -lSDL2main -lSDL2
 
 ifeq ($(shell uname), Linux)
-   INCL = `sdl2-config --libs`
-   LINK = 
+   LINK:=$(filter-out -lmingw32,$(LINK))
 endif
 
 main: main.o logic.o init.o render.o
