@@ -6,7 +6,7 @@
 #include "init.h"
 #include "render.h"
 
-int main() {
+int main(int argc, char *argv[]) {
     SDL_Window * window = initialize_window("Game of Life");
     SDL_Renderer * renderer = initialize_renderer(window);
 
