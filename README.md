@@ -20,4 +20,4 @@ make clean
 make
 ```
 
-![Output](https://github.com/chitramdasgupta/game-of-life/output.gif?raw=true "Output")
+![Output](https://github.com/chitramdasgupta/Game-of-Life/blob/main/output.gif?raw=true "Output")
