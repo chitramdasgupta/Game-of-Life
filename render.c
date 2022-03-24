@@ -4,22 +4,14 @@
 #include "constants.h"
 #include "render.h"
 
-int msleep(long ms) {
-    struct timespec ts;
-    int ret;
+void delay(int milliseconds) {
+    long pause;
+    clock_t now,then;
 
-    if (ms < 0) {
-        errno = EINVAL;
-        return -1;
-    }
-
-    ts.tv_sec = ms / 1000;
-    ts.tv_nsec = (ms % 1000) * 1000000;
-    do {
-        ret = nanosleep(&ts, &ts);
-    } while (ret && errno == EINTR);
-
-    return ret;
+    pause = milliseconds*(CLOCKS_PER_SEC/1000);
+    now = then = clock();
+    while( (now-then) < pause )
+        now = clock();
 }
 
 void render_grid(SDL_Renderer * renderer) {

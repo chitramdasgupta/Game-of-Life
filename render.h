@@ -3,14 +3,7 @@
 
 #include <SDL2/SDL.h>
 
-struct timespec {
-    time_t tv_sec;
-    long   tv_nsec;
-};
-
-int nanosleep(const struct timespec *req, struct timespec *rem);
-
-int msleep(long ms);
+void delay(int milliseconds);
 
 void render_grid(SDL_Renderer * renderer);
 

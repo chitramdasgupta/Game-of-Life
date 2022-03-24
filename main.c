@@ -35,7 +35,7 @@ int main() {
         render_cells(renderer, world);
         SDL_RenderPresent(renderer);
 
-        msleep(500); // milliseconds
+        delay(500);
     }
 
     exit_SDL(window);
