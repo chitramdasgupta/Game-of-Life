@@ -21,3 +21,4 @@ make
 ```
 
 ![Output](https://github.com/chitramdasgupta/Game-of-Life/blob/main/output.gif?raw=true "Output")
+
