@@ -13,7 +13,7 @@ Simply double click on *main* to run the program.
 If you want to compile the program for yourself, you can do the following:
 
 **NOTE:** To be able to compile on Windows you need to have [MinGW](https://osdn.net/projects/mingw/releases/)
-on your Windows system.
+installed on your Windows system.
 
 ```
 make clean
